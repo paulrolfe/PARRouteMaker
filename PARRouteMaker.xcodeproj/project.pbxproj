@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031C4C03AF7DDE63BFB4AF4E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9AE85702D0DDEDF42C1B672B /* Settings.bundle */; };
+		5EF4BB3401120D56FC196196 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 43D1314D3B81A5A8C21757F0 /* LaunchScreen.xib */; };
+		7176E52A9E5776FC7EF63CD0 /* PARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7D6E1631E912222114F731 /* PARAppDelegate.m */; };
+		77A3BB3287A8EC5067F3E717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AC41FC0DEAA57C311EDDDA /* main.m */; };
+		8F59E97E7FCB20657F06DDC1 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 8938A021BB15ACFEF767B88E /* Main.storyboard */; };
+		929C3988B5820CCE1F4C82FB /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A3C5CFF13F9284BA40C0BD /* libPods-unit_tests.a */; };
+		B0D07DD0F36B3D361AA94DC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6515281A8D35796EB6ED15F /* Images.xcassets */; };
+		D39BDD3DCF2EFF398BE0DE7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787AD819E191F97C01354A5 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBF339FFBBDB6A73C80B0243 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D604562435421E37427C6973 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A30C0BD04D89864649EF85FB;
+			remoteInfo = PARRouteMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B6D974EEB71B504D0BAEAE3 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
+		43D1314D3B81A5A8C21757F0 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		44EA8BCF8AD368082C076D5B /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		55AC41FC0DEAA57C311EDDDA /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CD7B1A42521B3AC367DBF89 /* PARAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PARAppDelegate.h; sourceTree = "<group>"; };
+		70CC2745EF2B92B3228FD773 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		73A3C5CFF13F9284BA40C0BD /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8938A021BB15ACFEF767B88E /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9AE85702D0DDEDF42C1B672B /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A6515281A8D35796EB6ED15F /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1FB6AB1FA8CA4ABAE6EF005 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2002848ECCF592FC831907A /* PARRouteMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PARRouteMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF47F11C81E6D1BCCD51ADF0 /* PARRouteMaker-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PARRouteMaker-Prefix.pch"; sourceTree = "<group>"; };
+		E65830939F34CF429E06B08B /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E787AD819E191F97C01354A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FA46BCFF3514C6183922E241 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		FE7D6E1631E912222114F731 /* PARAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PARAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3123BB9BACE1FB57F532A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929C3988B5820CCE1F4C82FB /* libPods-unit_tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDC556D06EB8D65A4D4666D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39BDD3DCF2EFF398BE0DE7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E44A92C18D7CD9244B030 /* Other-Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D1FB6AB1FA8CA4ABAE6EF005 /* Info.plist */,
+				DF47F11C81E6D1BCCD51ADF0 /* PARRouteMaker-Prefix.pch */,
+				55AC41FC0DEAA57C311EDDDA /* main.m */,
+			);
+			path = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		0DFE29DA44A2FE8614A82AC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		219A4BF78494C928D8BC2B70 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3F3679F60A080661837ACD28 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				43D1314D3B81A5A8C21757F0 /* LaunchScreen.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		5271AAB06088356BD392FF77 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6D5131FD7A088321A5399AF5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		70EFEECA69D8F609F55BDF1E = {
+			isa = PBXGroup;
+			children = (
+				AFC5D91E9D29AB663039FA4B /* PARRouteMaker */,
+				9B94F48E1D01EFD55B9DABEF /* UnitTests */,
+				BEA440FB0C64314E0D9F9743 /* Frameworks */,
+				78E4E4CB5ED7691C705E58AD /* Products */,
+				BE9BF1D8457A4B3B9F31B097 /* Pods */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		78E4E4CB5ED7691C705E58AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2002848ECCF592FC831907A /* PARRouteMaker.app */,
+				E65830939F34CF429E06B08B /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B94F48E1D01EFD55B9DABEF /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7654894C8E1921F341F4B54 /* Resources */,
+				6D5131FD7A088321A5399AF5 /* Helpers */,
+				B3BA6C555C7000742EFD9CBA /* Tests */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		A82063F96447666D03A851FD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8938A021BB15ACFEF767B88E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AFC5D91E9D29AB663039FA4B /* PARRouteMaker */ = {
+			isa = PBXGroup;
+			children = (
+				E4FD0493ED493FBB2EF7A8C6 /* Categories */,
+				219A4BF78494C928D8BC2B70 /* Protocols */,
+				5271AAB06088356BD392FF77 /* Headers */,
+				BF221E7FBDE7C152E31ABEB5 /* Models */,
+				FED916D5F688D370BDFED224 /* ViewModels */,
+				F6F9B8D01C924A9FC951BDF1 /* Controllers */,
+				0DFE29DA44A2FE8614A82AC2 /* Views */,
+				B11E1ECE2DBF04404AF53D27 /* Resources */,
+			);
+			path = PARRouteMaker;
+			sourceTree = "<group>";
+		};
+		B11E1ECE2DBF04404AF53D27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6515281A8D35796EB6ED15F /* Images.xcassets */,
+				A82063F96447666D03A851FD /* Storyboards */,
+				3F3679F60A080661837ACD28 /* Nibs */,
+				080E44A92C18D7CD9244B030 /* Other-Sources */,
+				9AE85702D0DDEDF42C1B672B /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3BA6C555C7000742EFD9CBA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BE9BF1D8457A4B3B9F31B097 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D974EEB71B504D0BAEAE3 /* Pods-unit_tests.release.xcconfig */,
+				70CC2745EF2B92B3228FD773 /* Pods-unit_tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEA440FB0C64314E0D9F9743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F414040AFD38EBFA759CF1 /* iOS */,
+				73A3C5CFF13F9284BA40C0BD /* libPods-unit_tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF221E7FBDE7C152E31ABEB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7654894C8E1921F341F4B54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA46BCFF3514C6183922E241 /* UnitTests-Info.plist */,
+				44EA8BCF8AD368082C076D5B /* UnitTests-Prefix.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1F414040AFD38EBFA759CF1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E787AD819E191F97C01354A5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4FD0493ED493FBB2EF7A8C6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F6F9B8D01C924A9FC951BDF1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CD7B1A42521B3AC367DBF89 /* PARAppDelegate.h */,
+				FE7D6E1631E912222114F731 /* PARAppDelegate.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FED916D5F688D370BDFED224 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44B7D8309CC0F51A1F069CF9 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405DAC627E2A7BD9D9BAF084 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				61819A2D5D796C7D33E8EB7A /* Check Pods Manifest.lock */,
+				55696084B08E902E0E3CF1BE /* Sources */,
+				D3123BB9BACE1FB57F532A55 /* Frameworks */,
+				84064CC716C2A84393C4E702 /* Resources */,
+				B516E06DF47AFB9DE59441BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093E91212212C600CB241B4C /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = E65830939F34CF429E06B08B /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A30C0BD04D89864649EF85FB /* PARRouteMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5E0437BC1D30538656D2A0 /* Build configuration list for PBXNativeTarget "PARRouteMaker" */;
+			buildPhases = (
+				01D78F36C6AA889A2E24DE06 /* Sources */,
+				DCDC556D06EB8D65A4D4666D /* Frameworks */,
+				DCC427983CE15002E7A522D2 /* Resources */,
+				B16B1D6534FB4C2E6D52C5BA /* Warn for TODO and FIXME comments */,
+				6D916621C1997A98224C3413 /* Set version number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PARRouteMaker;
+			productName = PARRouteMaker;
+			productReference = D2002848ECCF592FC831907A /* PARRouteMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D604562435421E37427C6973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PAR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = paulrolfe;
+			};
+			buildConfigurationList = E9452F0644F040771694FE7D /* Build configuration list for PBXProject "PARRouteMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70EFEECA69D8F609F55BDF1E;
+			productRefGroup = 78E4E4CB5ED7691C705E58AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30C0BD04D89864649EF85FB /* PARRouteMaker */,
+				44B7D8309CC0F51A1F069CF9 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84064CC716C2A84393C4E702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC427983CE15002E7A522D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D07DD0F36B3D361AA94DC1 /* Images.xcassets in Resources */,
+				031C4C03AF7DDE63BFB4AF4E /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61819A2D5D796C7D33E8EB7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D916621C1997A98224C3413 /* Set version number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set version number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always --abbrev=0)\nnumber_of_commits=$(\"$git\" rev-list master | wc -l | tr -d ' ')\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $number_of_commits\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${git_release_version#*v}\" \"$plist\"\n  fi\ndone\n";
+		};
+		B16B1D6534FB4C2E6D52C5BA /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		B516E06DF47AFB9DE59441BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D78F36C6AA889A2E24DE06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7176E52A9E5776FC7EF63CD0 /* PARAppDelegate.m in Sources */,
+				8F59E97E7FCB20657F06DDC1 /* Main.storyboard in Sources */,
+				5EF4BB3401120D56FC196196 /* LaunchScreen.xib in Sources */,
+				77A3BB3287A8EC5067F3E717 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55696084B08E902E0E3CF1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093E91212212C600CB241B4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A30C0BD04D89864649EF85FB /* PARRouteMaker */;
+			targetProxy = DBF339FFBBDB6A73C80B0243 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B0870BC7003F600C06A8D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PARRouteMaker/Resources/Other-Sources/PARRouteMaker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "PARRouteMaker/Resources/Other-Sources/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49B283EE55132C4E62EEEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70CC2745EF2B92B3228FD773 /* Pods-unit_tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PARRouteMaker.app/PARRouteMaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		51F5BE5993CB63F86A1D5CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3C23E25B2178B4814C2F87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6D974EEB71B504D0BAEAE3 /* Pods-unit_tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PARRouteMaker.app/PARRouteMaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		BF47F12B3C32BC182E17D3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PARRouteMaker/Resources/Other-Sources/PARRouteMaker-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "PARRouteMaker/Resources/Other-Sources/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA138CDC5649A99E3900A70E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		405DAC627E2A7BD9D9BAF084 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C23E25B2178B4814C2F87B /* Release */,
+				49B283EE55132C4E62EEEDC7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5E0437BC1D30538656D2A0 /* Build configuration list for PBXNativeTarget "PARRouteMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF47F12B3C32BC182E17D3DF /* Release */,
+				0B0870BC7003F600C06A8D74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9452F0644F040771694FE7D /* Build configuration list for PBXProject "PARRouteMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA138CDC5649A99E3900A70E /* Debug */,
+				51F5BE5993CB63F86A1D5CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D604562435421E37427C6973 /* Project object */;
+}

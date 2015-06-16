@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PARMapViewController">
+            <connections>
+                <outlet property="dragRecognizer" destination="EkZ-1r-diY" id="ldQ-9t-ax6"/>
+                <outlet property="drawRecognizer" destination="u2H-24-bTd" id="7Sr-BP-WQk"/>
+                <outlet property="mapView" destination="MCI-ET-3OZ" id="DlF-7k-5yr"/>
+                <outlet property="undoButton" destination="ViK-qg-7dV" id="Mk2-uK-gmV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-ET-3OZ" customClass="PARMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pu0-H5-qP7"/>
+                        <outletCollection property="gestureRecognizers" destination="EkZ-1r-diY" appends="YES" id="GL3-9V-avn"/>
+                        <outletCollection property="gestureRecognizers" destination="u2H-24-bTd" appends="YES" id="Yts-ph-ACf"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViK-qg-7dV">
+                    <rect key="frame" x="39" y="522" width="38" height="39"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="SEB-sb-GoV"/>
+                        <constraint firstAttribute="width" constant="38" id="aX8-p4-noW"/>
+                    </constraints>
+                    <color key="tintColor" red="0.46467009460000003" green="1" blue="0.1525233926" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="titleShadowOffset" width="-4" height="-4"/>
+                    <state key="normal" image="undo_128">
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="undoTouched:" destination="-1" eventType="touchUpInside" id="WTB-ou-kph"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MCI-ET-3OZ" secondAttribute="bottom" id="4pd-UE-PeI"/>
+                <constraint firstItem="MCI-ET-3OZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EAo-Lh-OkJ"/>
+                <constraint firstAttribute="bottom" secondItem="ViK-qg-7dV" secondAttribute="bottom" constant="39" id="Ka5-qT-bpA"/>
+                <constraint firstItem="ViK-qg-7dV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="dLL-Ff-nsk"/>
+                <constraint firstAttribute="trailing" secondItem="MCI-ET-3OZ" secondAttribute="trailing" id="h9b-Ki-LCC"/>
+                <constraint firstItem="MCI-ET-3OZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jfD-UM-KLJ"/>
+            </constraints>
+        </view>
+        <panGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="2" maximumNumberOfTouches="2" id="EkZ-1r-diY" userLabel="doubleTouchPan" customClass="PARGestureTrap">
+            <connections>
+                <action selector="dragGestureRecognized:" destination="-1" id="ziE-dY-h8Y"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="u2H-24-bTd" userLabel="singleTouchPan" customClass="PARGestureTrap">
+            <connections>
+                <action selector="drawGestureRecognized:" destination="-1" id="4CE-zv-vVW"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="undo_128" width="128" height="128"/>
+    </resources>
+</document>

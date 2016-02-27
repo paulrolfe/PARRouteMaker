@@ -154,6 +154,9 @@
     PAROverlay * routeLine = [PAROverlay polylineWithCoordinates:coordinateArray count:pointCount];
     [self.mapView addOverlay:routeLine];
     
+    free(coordinateArray);
+    coordinateArray = NULL;
+    
     if (getRoute){
         [self.drawnLocationArray addObject:self.currentLine];
         [self findRouteFromLocation:[(NSArray *)locationArray[locationArray.count-2] lastObject] toLocation:[(NSArray *)locationArray.lastObject lastObject]];
@@ -162,10 +165,6 @@
     else{
         [self drawRoutes];
     }
-    
-    free(coordinateArray);
-    coordinateArray = NULL;
-    
 }
 
 - (void)findRouteFromLocation:(CLLocation *)from toLocation:(CLLocation *)to {
